@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+
+
+*  {   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+
+/* For Navigation Bar -> STARTS */
+
+li, a, button, label {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    color: #fff;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.login_signup{
+    padding: 10px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto ;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.2s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #a200ff;
+}
+
+button {
+    padding: 10px 10px;
+    width: 90px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(162, 0, 255,.8);
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(162, 0, 255,1.2);
+
+}
+
+
+
+/* For Slideshow  */
+
+
+
+
+  .slideshow{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+
+  }
+  .navigation{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 20%;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .bar:hover{
+    background: #a200ff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+
+  @keyframes slide_animation {
+    0% {left: 0px;}
+    20% {left: 0px;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: 0%;}
+  }
+  
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    
+
+  }
+
+  
+  .slide{
+    width: 25%;
+    transition: 0.6s;
+  }
+  
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -25%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -50%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -75%;
+  }
+
+  
+/* In slides */
+
+.slide_content {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    color: #fff;
+}
+
+.slide_text {
+  padding: 120px;
+  flex: 1;
+}
+
+.slide_image{
+  padding: 60px;
+  flex: 1;
+}
+
+.slide_text h1 {
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    color: #a200ff;
+}
+
+.slide_text p{
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    padding-top: 20px;
+    padding-left: 5px;
+    font-size: 30px;
+    color: #fff;
+}
+.slide_button{
+    position: absolute;
+    padding-top: 30px;
+}
+
+#whatch_now_button{
+    width: 150px;
+}
+
+
+/* info bar */
+
+.info{
+  color: #a200ff;
+  text-align: center;
+}
+
+.info h1{
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+}
+
+.info p{
+  color: #fff;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* features */
+
+.features{
+    display: flex;
+
+}
+.feature_block{
+  flex: 1;
+}
+
+.feature_block p {
+  color: #fff;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.feature_block img {
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.feature_block label{
+
+  margin: 150px;
+  text-decoration: underline;
+}
+
+.sec1 {
+  display: flex;
+}
+
+.sec1 h1{
+  color: #a200ff;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.sec1 p{
+  color: #fff;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+.sec2 {
+  display: flex;
+}
+
+.sec2 h1{
+  color: #a200ff;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.sec2 p{
+  color: #fff;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+
+
+.featured_in h1{
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  color: #a200ff;
+  text-align: center;
+  padding: 30px;
+}
+.featured_in_logos{
+  display: flex;
+}
+
+.featured_in_logos img {
+  flex: 1;
+  width: 200px;
+  height: 180px;
+  margin: 10px;
+}
