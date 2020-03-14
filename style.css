@@ -224,7 +224,8 @@ button:hover{
 /* features */
 
 .features{
-    display: flex;
+  cursor: pointer;
+  display: flex;
 
 }
 .feature_block{
